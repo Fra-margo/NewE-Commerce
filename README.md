@@ -1,3 +1,4 @@
+Questo progetto è stato svolto in un team di 5 persone.
 # I CECI ECOMMERCE
 
 [![Demo](https://img.youtube.com/vi/ti_g2uBRbHw/0.jpg)](https://youtu.be/ti_g2uBRbHw) <--- Guarda il video demo. 
