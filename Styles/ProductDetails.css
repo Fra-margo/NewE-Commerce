@@ -1,0 +1,214 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+#imgContainerDetails{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    align-items: flex-start;
+}
+
+.imgProductDetails {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.modalMessaggio {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalMessaggio-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.messaggioConfermaModal {
+    color: green;
+    font-size: 18px;
+}
+
+#LeftContainerDetails {
+    display: flex;
+    background-color: white;
+    margin-right: 10px;
+    width: 70%;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#RightContainerDetails {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#topProductDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#bottomProductDetails {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top:30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: solid 8px #f4e1c1;
+    border-bottom: solid 8px #f4e1c1;
+}
+
+#mainContainerDetails {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 80vh;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.detailsDetails {
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.priceDetails{
+    margin-bottom: 20px;
+}
+
+.brandDetails {
+    color: #5aa3ce;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#containerStarsDetails {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.categoryDetails {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#lblPrezzoTotale,
+.prezzoTotaleDetails,
+#lblQuantitàDetails{
+    font-weight: bold;
+}
+
+.btnAggiungiAlCarrelloDetails {
+    background-color: #5aa3ce;
+}
+
+.productNameDetails,
+#compraDetails {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.productNameDetails,
+.ratingDetails,
+.categoryDetails,
+.detailsDetails,
+#compraDetails,
+#lblQuantitàDetails,
+.listDetails,
+.prezzoTotaleDetails,
+#lblPrezzoTotale,
+.spanDetails{
+    color: #333333;
+}
+
+.btnAggiungiAlCarrelloDetails {
+    color: white;
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: solid 2px #5aa3ce;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnAggiungiAlCarrelloDetails:hover{
+    color: #5aa3ce;
+    background-color: white;
+}
+
+#compraDetails{
+    margin-bottom: 60px;
+}
+
+#lblQuantitàDetails{
+    margin-bottom: 10px;
+}
+
+.listDetails{
+    margin-bottom: 30px;
+    width: 100px;
+    border: solid 2px #f4e1c1;
+    transition: background-color 0.3s;
+}
+
+.listDetails:hover{
+    cursor: pointer;
+    background-color: #f4e1c172;
+}
+
+.star-filled {
+    color: #5aa3ce;
+}
+
+.star-empty {
+    color: #5aa3ce;
+}
+
+.star-rating {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+
+/* WRONG PRODUCT PAGE */
+
+.wrongProductPage {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .wrongProductPage h1 {
+        color: #333333;
+        font-size: 3.5em;
+        font-family: "Oswald", sans-serif;
+    }

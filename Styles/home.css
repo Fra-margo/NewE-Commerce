@@ -1,0 +1,187 @@
+﻿#HomeCategories {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255,255,255,0.5);
+    padding: 35px 0;
+    scroll-behavior: smooth;
+}
+    #HomeCategories a {
+        text-decoration: none;
+    }
+
+.HomeCategory {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    color: #5aa3ce;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+    .HomeCategory p {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 0.8em;
+        width: 70%;
+        word-wrap: break-word;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .HomeCategory svg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .HomeCategory:hover {
+        transform: scale(1.1);
+        background-color: #5aa3ce;
+        color: white;
+    }
+
+        .HomeCategory:hover svg {
+            transform: scale(1.5);
+        }
+
+        .HomeCategory:hover p {
+            transform: scale(1.2)
+        }
+
+
+#HomeProducts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    #HomeProducts .CategoryContainer {
+        background-color: white;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .CategoryContainer > h2 {
+        font-size: 2em;
+        color: #333333;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #f4e1c1;
+        margin: 0 0 50px 0;
+    }
+
+/* PRODUCT CARD */
+
+.productCard {
+    cursor: pointer;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .productCard:hover {
+        transform: scale(1.1);
+        z-index:30;
+    }
+
+        .productCard:hover .productTxt {
+            background-color: rgba(90, 163, 206, 0.3);
+            border-bottom: 5px solid #5aa3ce;
+        }
+
+        .productCard a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .productCard a .productTxt {
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-bottom: 5px solid #f4e1c1;
+                padding-bottom: 20px;
+                transition: background-color 0.15s linear, border-bottom 0.15s linear;
+            }
+
+        .productCard a .productTxt h2 {
+            height: 30px;
+            overflow-y: hidden;
+            color: #333333;
+        }
+
+        .productCard a .productTxt h3 {
+            color: #5aa3ce;
+        }
+
+        .productCard a .productTxt .productPriceRating p {
+            color: #333333;
+        }
+
+    .productCard .productImg {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+        .productCard .productImg img {
+            width: 100%;
+        }
+
+    .productCard .productPriceRating {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+.productCardsContainer {
+    display: flex;
+    height: 460px;
+    overflow: auto;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+/* STELLE */
+
+.productCardRating i {
+    color: #5aa3ce;
+}
+
+
+/* SCROLLBAR */
+
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #5aa3ce;
+
+    :: -webkit-scrollbar-thumb{
+
+                             
+    background: #5aa3ce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5aa3ce;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #5aa3ce;
+}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@200..700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#formCeci {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4e1c1;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, button, li, ul, a {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5aa3ce;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+    header a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header .headerLeft {
+        display: flex;
+    }
+
+        header .headerLeft .houses {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 40px;
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        header .headerLeft .svgHome:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+
+        header .headerLeft .svgHome svg {
+            transition: fill 0.1s linear;
+        }
+
+        header .headerLeft .svgHome:hover svg {
+            fill: #5aa3ce;
+        }
+
+        header .headerLeft .searchDiv {
+            display: flex;
+            align-items: center;
+        }
+
+            header .headerLeft .searchBox {
+                margin-left: 10px;
+                height: 35px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                border-bottom: 5px solid white;
+                color: white;
+                font-size: 1.3em;
+            }
+
+    header .headerCenter {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .headerRight {
+        display: flex;
+        align-items: center;
+    }
+
+        header .headerRight ul {
+            list-style: none;
+        }
+
+        header .headerRight .hasSubmenu {
+            position: relative;
+        }
+
+        .hasSubmenu:hover ul {
+            display: flex;
+        }
+
+        .hasSubmenu ul {
+            width: 150px;
+            height: 100px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 50px;
+            right: -15px;
+            background-color: #5aa3ce;
+            border: 3px solid white;
+            animation: dropdownAnimation 0.2s ease-in-out;
+        }
+
+        @keyframes dropdownAnimation {
+            from {
+                opacity: 0;
+                top: 40px;
+            }
+            to {
+                opacity: 1;
+                top: 50px;
+            }
+        }
+
+            .hasSubmenu li {
+                cursor: pointer;
+                padding: 10px 0;
+                transition: background-color 0.15s ease-in-out;
+            }
+
+            .hasSubmenu li:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+
+            #logoutBtn {
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                font-family: "Lato", sans-serif;
+                font-weight: 500;
+                font-size: 1em;
+                color: white;
+                padding-left: 10px;
+            }
+
+            .hasSubmenu ul a {
+                font-family: "Lato", sans-serif;
+                font-weight: 500;
+                font-size: 1em;
+                color: white;
+                padding-left: 10px;
+            }
+
+        header .headerRight #loginBtnDiv {
+            margin-right: 15px;
+        }
+
+            header .headerRight #loginBtnDiv #loginBtn {
+                cursor: pointer;
+                width: 80px;
+                height: 35px;
+                border: 3px solid white;
+                border-radius: 3px;
+                color: white;
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+                letter-spacing: 1px;
+                background-color: transparent;
+                transition: color 0.15s linear, background-color 0.2s ease-in-out;
+            }
+
+            header .headerRight #loginBtnDiv #loginBtn:hover {
+                color: #5aa3ce;
+                background-color: white;
+            }
+
+        header .headerRight #profilePic {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        header .headerRight #profilePic img {
+            width: 100%;
+        }
+
+    header .headerRight a {
+        display: flex;
+        align-items: center;
+    }
+
+    header h1 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        font-size: 3.5em;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    header svg {
+        width: 40px;
+        height: 40px;
+        fill: white;
+    }
+
+footer {
+    margin: auto 0 0 0;
+    background-color: #5aa3ce;
+    text-align:center;
+    color: white;
+    padding: 10px 0;
+}
+
+#btnSearch {
+    border: none;
+    background-color: transparent;
+}
+
+#searchHints {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+/* CART COUNTER */
+.cartCounterContainer {
+    position: relative;
+}
+
+#cartCounter, .counterCookie {
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+    transform: translate(-35%, -57.5%);
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #5aa3ce;
+}
+
+.toTop {
+    position: fixed;
+    bottom: 45px;
+    right: 35px;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .toTop:hover {
+        transform: translateY(-5px);
+    }
